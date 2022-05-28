@@ -1,3 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -9,9 +20,14 @@ body {
     color: var(--primary-text-color);
     background-color: #E5E5E5;
     font-family: Roboto, sans-serif;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     font-size: 14px;
-    line-height: 1.71;
+}
+
+.container {
+    width: 1170px;
+    padding-left: 215px;
+    padding-right: 215px;
 }
 
 ul {
@@ -21,10 +37,10 @@ ul {
 .logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
-    font-size: 26px; 
+    font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .logo-accent {
@@ -36,24 +52,28 @@ ul {
 }
 
 .logo-style {
-color: var(--text-color-secondary);
+    color: var(--text-color-secondary);
 }
 
 .site-nav .link {
-    color: var(--title-text-color);  
+    color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
-    }
+}
+
 .auth-nav .links {
     color: var(--primary-text-color);
+    font-weight: 500;
     text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .auth-nav .links:hover,
@@ -65,12 +85,16 @@ color: var(--text-color-secondary);
 .hero-title {
     color: var(--text-color-secondary);
     font-size: Black;
-     font-size: 44px; 
-     line-height: 1.36;
-     font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
     text-align: Center;
-     Letter-spacing: 6%;
+    Letter-spacing: 0.06em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    text-align: center;
 }
+
 .hero {
     background-color: #2F303A;
 }
@@ -79,15 +103,15 @@ color: var(--text-color-secondary);
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px; 
-    line-height: 1.17; 
-    text-align: Center; 
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: Center;
 }
 
 /* features */
 .feature-list .title {
     color: var(--title-text-color);
-    font-weight: 700;  
+    font-weight: 700;
     line-height: 1.14;
 }
 
@@ -96,11 +120,17 @@ color: var(--text-color-secondary);
 .button {
     color: var(--text-color-secondary);
     background-color: #2196F3;
-    font-weight: 700; 
-    font-size: 16px; 
+    font-weight: 700;
+    font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
     text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
 }
 
 
@@ -111,8 +141,8 @@ color: var(--text-color-secondary);
 .section-staff {
     color: var(--title-text-color);
     font-weight: 500;
-    font-size: 16px; 
-    line-height: 1,19;
+    font-size: 16px;
+    line-height: 1, 19;
 }
 
 .section-descriptions {
@@ -128,16 +158,20 @@ color: var(--text-color-secondary);
 .adress-map {
     color: var(--text-color-secondary);
     line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
 }
 
 .adress-info {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
 }
 
 .adress-nav .adress-map:hover,
 .adress-nav .adress-map:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .adress-nav .adress-info:hover,
@@ -146,16 +180,25 @@ color: var(--accent-color);
     background-color: var(--accent-color);
 }
 
+.adress-nav {
+    text-decoration: none;
+}
+
 /* portfolio */
 .button-style {
+    font-family: roboto;
     font-size: 16px;
     line-height: 1.63;
     font-weight: 500;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
 }
 
-.button-style {
-    background-color: #F5F4FA;
-}
 
 .button-nav .button-style:hover,
 .button-nav .button-style:focus {
@@ -163,13 +206,16 @@ color: var(--accent-color);
     background-color: var(--accent-color);
 }
 
+.portfolio {
+    text-decoration: none;
+}
+
 .name {
     color: var(--title-text-color);
-    font-size:  700;
-    font-size: 18px; 
+    font-weight: 500;
+    font-size: 18px;
     line-height: 2;
-    letter-spacing: 6%;
-    text-decoration: none;
+    letter-spacing: 0.06em;
 }
 
 .work {

@@ -8,7 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -25,13 +24,22 @@ body {
 }
 
 .container {
-    width: 1170px;
-    padding-left: 215px;
-    padding-right: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+
 
 ul {
     list-style: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -41,6 +49,9 @@ ul {
     line-height: 1.19;
     font-weight: 700;
     text-decoration: none;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    
 }
 
 .logo-accent {
@@ -55,6 +66,11 @@ ul {
     color: var(--text-color-secondary);
 }
 
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
 .site-nav .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -63,9 +79,23 @@ ul {
     text-decoration: none;
 }
 
+.site-nav .items:not(:last-child){
+    margin-right: 50px;
+}
+
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .items+.items {
+    margin-left: 50px;
 }
 
 .auth-nav .links {
@@ -92,11 +122,13 @@ ul {
     Letter-spacing: 0.06em;
     margin-top: 0px;
     margin-bottom: 40px;
-    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
 }
 
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
 /* section */
@@ -105,16 +137,32 @@ ul {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: Center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 /* features */
 .feature-list .title {
     color: var(--title-text-color);
     font-weight: 700;
     line-height: 1.14;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
+.feature-list {
+    display: flex;
+}
 
 /* button */
 .button {
@@ -131,8 +179,21 @@ ul {
     display: inline-block;
     text-align: center;
     border: 1px solid transparent;
+    margin-bottom: 200px;
 }
 
+.work-list> .item {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.work-list{
+    display: flex;
+}
+
+.work-list .item+.item {
+    margin-left: 30px;
+}
 
 .site-nav .link :current {
     color: var(--accent-color);
@@ -143,12 +204,16 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1, 19;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .section-descriptions {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .adress {
@@ -160,6 +225,8 @@ ul {
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 9px;
 }
 
 .adress-info {
@@ -167,6 +234,8 @@ ul {
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 9px;
 }
 
 .adress-nav .adress-map:hover,
@@ -185,6 +254,39 @@ ul {
 }
 
 /* portfolio */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.flex-elements {
+    width:calc(100%/3+60px);
+    margin-right: 30px;
+}
+
+.flex-elements:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.flex-elements:nth-child(4n):nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+
+.flex-element {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.flex-element:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.flex-element:nth-last-child(-n+4) {
+    margin-bottom: 0px;
+}
+
 .button-style {
     font-family: roboto;
     font-size: 16px;
@@ -199,6 +301,13 @@ ul {
     border: 1px solid transparent;
 }
 
+.button-nav{
+    display: flex;
+}
+
+.button-nav .buttons+.buttons {
+    margin-left: 8px;
+}
 
 .button-nav .button-style:hover,
 .button-nav .button-style:focus {
@@ -216,12 +325,16 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0px;
+    margin-bottom: 4px;
 }
 
 .work {
     color: #757575;
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 

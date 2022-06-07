@@ -401,8 +401,13 @@ ul {
 }
 
 .portfolio-link {
-    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin: 0px;
+    width: 370px;
+    
 }
 
 .name {

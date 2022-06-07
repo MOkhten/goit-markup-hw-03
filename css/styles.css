@@ -47,6 +47,9 @@ ul {
 
 .nav {
     background-color: #FFFFFF;
+    border-top: 80px;
+        border-bottom: 1px solid #ECECEC;
+        max-width: 1600px;
 }
 
 .logo {
@@ -159,7 +162,7 @@ ul {
 
 .section.no-padding {
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 94px;
 }
 /* features */
 
@@ -393,7 +396,7 @@ ul {
 }
 
 .portfolio-link {
-    padding-top: 20px;
+    padding: 15px;
     margin: 0px;
 }
 
